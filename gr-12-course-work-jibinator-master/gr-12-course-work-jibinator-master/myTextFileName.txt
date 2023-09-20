@@ -1,0 +1,4 @@
+Name of Objects: appleorangebanana
+Price of Objects: 123
+Receipt: Your price for apple costs 1Your price for orange costs 2Your price for banana costs 3
+Which costs a total of : 6

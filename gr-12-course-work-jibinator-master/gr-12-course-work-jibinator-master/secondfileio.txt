@@ -1,0 +1,5 @@
+b 1 1
+You have finished 50% of your tasks.
+You have 1 tasks left to do.
+The average days you have is 0.0
+You have 1 days to finish all your tasks

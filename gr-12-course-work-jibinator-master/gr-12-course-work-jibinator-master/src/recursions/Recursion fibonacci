@@ -1,0 +1,56 @@
+package recursions;
+
+import java.util.Scanner;
+
+public class Recursion_excel {
+
+	public static void main(String[] args) {
+		Scanner myInput = new Scanner(System.in);
+		System.out.println("What nth do you want?");
+		int count = myInput.nextInt();
+
+		System.out.println(findFibonacciRecursion(count));
+	}
+
+	public static int findFibonacciRecursion(int count) {
+
+		if (count == 0) {
+			return 0;
+		}
+
+		else if (count == 1) {
+			return 1;
+		}
+
+		else {
+			return (findFibonacciRecursion(count - 1) + findFibonacciRecursion(count -  2));// constantly calls the
+																							// fibonacci method until
+																							// the count is reduced to 0
+																							// or 1 where it will stop
+																							// the recusion
+		}
+	}
+
+	public static int findFibonacciLoop(int count) {
+
+		if (count == 0) {
+			return 0;
+		} else if (count == 1) {
+			return 1;
+		} else {
+			int n1 = 0;
+			int n2 = 1;
+			int n3 = 0;
+
+			for (int i = 2; i <= count; i++) {
+				n3 = n1 + n2;// makes adds the previous 2 numbers (ex hereL n3 = 0+1 & n1 = 1 &n2 =1 and when
+								// it goes again, n3 = 1+ 1 etc
+				n1 = n2;
+				n2 = n3;
+			}
+
+			return n3;
+		}
+	}
+}
+

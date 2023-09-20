@@ -1,0 +1,32 @@
+package recursions;
+
+public class Recursion_excelGCD {
+	public static void main(String[] args) {
+
+		System.out.println(GCD(9234, 87));
+	}
+
+	public static int GCD(int m, int n) {
+		if (n < 0) {
+			n = n * -1;// if the second integer is larger smaller than 0, then I make it into a
+						// positive number
+		}
+
+		if (m < 0) {
+			m = m * -1;// if the first integer is smaller than 0, make it into a positive
+		}
+
+		if (n == m) {
+			return m;// if the first integer is equal to the second integer, then the GCD is itself
+						// so return m
+		}
+		if (n > m) {
+			return GCD(n, m);// if the first int is smaller than the second, swap the first and second so we
+								// can subtractm by n
+		}
+		return GCD(m - n, n);// if none of these criteria has met, then subtract the first integer by the
+								// second integer and just keep doing this until the GCD is found
+
+	}
+}
+
