@@ -1,0 +1,10 @@
+body{
+    margin-top: 20%;
+
+}
+#input{
+    width: 20rem;
+    height: 10rem;
+    background-color: lightgray;  /* Make it easy to see */
+    border: 2px solid black;  /* Add a border */
+}
