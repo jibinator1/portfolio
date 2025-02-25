@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(26, 26, 26);
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 0 1rem;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+}
+
+.nav-links li {
+    display: inline;
+    padding: 2.5rem; 
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    background-color: #333;
+    padding: 2rem 3rem;
+    margin-left: 1srem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    background-color: rgb(70, 69, 69);
+    cursor: pointer;
+}
+
+.nav-links li.resume {
+    margin-left: auto;
+}
+
+.nav-links li.resume a {
+    padding: 2rem 2rem;
+}
