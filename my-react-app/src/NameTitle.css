@@ -4,11 +4,17 @@
 }
 
 #intro1 {
-    font-size: 2em;
+    font-size: 2rem;
     color: #ffffff;
+    transition: opacity 3s ease-in-out;  /* Smooth transition for opacity */
+}
+
+.fading {
+    opacity: 0;  /* Make the text fade out */
 }
 
 #intro2 {
     font-size: 1.5em;
     color: #ffffff;
 }
+

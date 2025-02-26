@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+
+}
+.about-Me {
+    margin-top: 20rem;
+    font-size: 2rem;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+
+}
+.description {
+    font-size: 1.3rem;
+
+}

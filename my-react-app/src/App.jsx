@@ -1,6 +1,8 @@
 import Navbar from './Navbar';
 import NameTitle from './NameTitle';
-import UserInput from './UserInput';
+import AboutMe from './AboutMe';
+import Projects from './Projects';
+
 
 function App() {
   return (
@@ -8,7 +10,8 @@ function App() {
       <div style={{ display: "block" }}>
         <Navbar />
         <NameTitle />
-        <UserInput />
+        <AboutMe />
+        <Projects/>
       </div>
       
     </>
